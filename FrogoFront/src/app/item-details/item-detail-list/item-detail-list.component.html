@@ -1,0 +1,24 @@
+
+<table class="table table-hover">
+  <tr>
+
+     <td>No</td>
+     <td>Name</td>
+     <td>Current Price</td>
+     <td>Desired Price</td>
+     <td>Store</td>
+     <td>URL</td>
+     <td>Sales Price</td>
+
+    </tr>
+  <tr *ngFor="let i of service.list;let a = index">
+    <td>{{a+1}} </td>
+    <td>{{ i.ItemName }}</td>
+    <td>{{ i.ItemCurrentPrice}}</td>
+    <td>{{ i.ItemWantedPrice}}</td>
+    <td>{{ i.ItemStore}}</td>
+    <td><a [href]="i.ItemUrl">Link</a></td>
+    <td>{{ i.ItemSalesPrice}}</td>
+
+    </tr>
+</table>

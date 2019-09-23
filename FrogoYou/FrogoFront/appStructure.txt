@@ -1,0 +1,4 @@
+-src
++---> app
+|   ---> Item-details
+|   |   |-- Item-details.component.ts|.html|.css
